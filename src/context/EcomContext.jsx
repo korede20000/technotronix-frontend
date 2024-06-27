@@ -187,7 +187,7 @@ export const EcomProvider = ({ children }) => {
 
   const createOrder = async(transaction_id, orderId)=>{
     try {
-      const response = await fetch("http://localhost:5000/api/payment/verify", {
+      const response = await fetch("https://technotronix-api-wi44.onrender.com/payment/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

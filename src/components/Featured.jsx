@@ -24,7 +24,7 @@ function Featured() {
         <div className="flex gap-6 flex-wrap">
             {featured.map((item)=>(
                 <Card key={item._id}>
-                    <Link to={`/details/${item._id}`} ><img src={"http://localhost:5000/" + item.img} alt="" className="h-[200px]" /></Link>
+                    <Link to={`/details/${item._id}`} ><img src={"https://technotronix-api-wi44.onrender.com/" + item.img} alt="" className="h-[200px]" /></Link>
                     <p className="font-bold">{item.name}</p>
                     <p>{item.price}</p>
                     <button onClick={isAuthenticated ? ()=> addToCart(item._id) : login} className="bg-orange-500 text-white p-[10px] rounded mt-[10px]">

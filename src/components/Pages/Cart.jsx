@@ -32,7 +32,7 @@ function Cart() {
                         <td>{item.product.name}</td>
                         <td>  
                             <div className="flex justify-center">
-                                <img src={ "http://localhost:5000/" + item.product.img} alt="" className="h-[50px]" />
+                                <img src={ "https://technotronix-api-wi44.onrender.com/" + item.product.img} alt="" className="h-[50px]" />
                             </div>
                         </td>
                         <td>{item.product?.price}</td>
